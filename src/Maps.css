@@ -1,0 +1,69 @@
+
+
+.map-contanier{
+background:whitesmoke;
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+}
+
+ h1, h2, h3, h4,h5, h6{
+  font-family: 'Outfit', sans-serif;
+}
+
+ p, a, ul li{
+  font-family: 'Dongle', sans-serif;
+  font-weight:400;
+  font-size:20px;
+}
+.main-title{
+  width:100%;
+  text-align:center;
+  color:black;
+}
+.slider {
+  margin: 80px 0;
+  height: 200px;
+  display: block;
+  perspective: 1000px;
+  position: relative;
+  width: 100vw;
+}
+
+ .slide{
+   margin-left:-50px;
+    display: inline-block;
+    width: 400px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: .4s all;
+    border-radius:20px;
+    color:black;
+    backdrop-filter:blur(10px);
+    border: double 1px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#009dff75, lightblue), 
+                    linear-gradient(to right, #009dff75, #3498db);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+.slide-container{
+  padding:20px 30px;
+  overflow: hidden;
+}
+
+.slide-container ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.slide-container ul li{
+  padding:0;
+}
+
+.slide.active {
+    z-index: 4; 
+  }

@@ -1,0 +1,118 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar li {
+    margin-right: 20px;
+  }
+
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .navbar li:hover {
+    background-color: transparent; /* Hover background color */
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f0f0f0; /* Hover background color */
+  }
+
+  .get-started-button-bottom {
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+    padding: 15px 30px;
+    background-color: #e74c3c; 
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 999;
+  }
+
+  .get-started-button-bottom:hover {
+    background-color: #c0392b; /* Hovered button color */
+  }
+  .landinglogin-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .landinglogin-button:hover {
+    background-color: #333; 
+    color: #fff; 
+  }
+
+ 
+  .main-content {
+    background-image: url('homepage.jpeg');
+    position: relative;
+    scroll-behavior: auto;
+    background-size: cover;
+    background-position: center;
+    height: 89.5vh;
+    display: flex;
+    margin-top: 0em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  .logo img{
+    width: 300px;
+    height: 80px;
+    cursor: pointer;
+  }
